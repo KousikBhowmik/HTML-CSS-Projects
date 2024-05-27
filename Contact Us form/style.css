@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(100, 225, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 88%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.content .left-side .details{
+    margin: 14px;
+    text-align: center;
+
+}
+.content .left-side .details i{
+    font-size: 28px;
+    color: #621471;
+    margin-bottom: 10px;
+}
+.content .left-side .details .tipic{
+    font-size: 18px;
+    color: #3e2093;
+    font-weight: 500;
+    
+}
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    right: -15px;
+    top: 50%;
+    width: 2px;
+    background: #0b0b91;
+    transform: translateY(-50%);
+}
+.container .content .right-side{
+    width: 75%;
+    height: 100%;
+    margin-left: 75px;
+
+}
+.content .left-side .details .text-one{
+    font-size: 14px;
+    color: #afafb6;
+}
+.content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+}
+.content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+.right-side .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 12px 0;
+}
+.right-side .input-box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: #f0f1f8;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 0 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 110px;
+    margin-top: 6px;
+}
+.right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    background: #3e2093;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+    background: #825de7;
+}
+@media (max-width:)

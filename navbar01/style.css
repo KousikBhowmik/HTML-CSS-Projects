@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html , body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    
+    
+}
+nav{
+    width: 600px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    position: relative; 
+    
+}
+nav label{
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    /* background: red; */
+    border-radius: 5px;
+    margin: 0 5px;
+    color: #8e44ad;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+nav label:hover{
+    background: rgba(142, 68, 173, 0.3);
+}
+nav label i{
+    margin-right: 4px;
+}
+.sidebar{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #8e44ad;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+#home:checked ~ nav .sidebar{
+    left: 0%;
+}
+#blog:checked ~ nav .sidebar{
+    left: 20%;
+}
+#code:checked ~ nav .sidebar{
+    left: 40%;
+}
+#help:checked ~ nav .sidebar{
+    left: 60%;
+}
+#about:checked ~ nav .sidebar{
+    left: 80%;
+}
+#home:checked ~ label .home p,
+#blog:checked ~ label .blog,
+#code:checked ~ label .code,
+#help:checked ~ label .help,
+#about:checked ~ label .about{
+    color: #000000;
+}
+input{
+    display: none;
+}
